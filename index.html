@@ -107,7 +107,7 @@ session.addEventListener("select", (event) => {
   if (crate) {
     //const clone = crate.clone();
     //clone.position.copy(reticle.position);
-    crate.position.set(reticle.position);
+    crate.position.copy(reticle.position);
     
     //clone.scale.set(0.01,0.01,0.01);
     //scene.add(clone);
