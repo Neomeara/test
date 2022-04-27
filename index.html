@@ -92,7 +92,7 @@ crateTexture = textureLoader.load("768-200x300.png");
 
 // Create mesh with these textures
 crate = new THREE.Mesh(
-	new THREE.BoxGeometry(1,1,1),
+	new THREE.PlaneGeometry(0.5,0.5),
 	new THREE.MeshPhongMaterial({
 		color:0xffffff,
 		
