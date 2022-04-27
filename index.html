@@ -104,10 +104,12 @@ crate = new THREE.Mesh(
 
 session.addEventListener("select", (event) => {
   if (crate) {
-    const clone = crate.clone();
-    clone.position.copy(reticle.position);
+    //const clone = crate.clone();
+    //clone.position.copy(reticle.position);
+    crate.position.copy(reticle.position);
+    
     //clone.scale.set(0.01,0.01,0.01);
-    scene.add(clone);
+    //scene.add(clone);
     //clone.receiveShadow = true;
     //clone.castShadow = true;
   }
